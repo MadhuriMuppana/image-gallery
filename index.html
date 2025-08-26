@@ -4,18 +4,50 @@
     <meta charset="UTF-8" />
     <title>My Image Gallery</title>
     <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .section-title {
+        margin: 30px 0 10px;
+        font-size: 1.2rem;
+        color: #555;
+        border-bottom: 2px solid #ddd;
+        display: inline-block;
+        padding-bottom: 5px;
+      }
+
       .image-list {
         list-style: none;
         padding: 0;
-        margin: 0;
+        margin: 20px auto;
         display: flex;
-        gap: 10px;
+        justify-content: center;
+        gap: 20px;
         flex-wrap: wrap;
-        align-items: flex-start;
+        max-width: 900px;
       }
 
       .image-list li {
-        display: inline-block;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .image-list li:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       }
 
       .image-list img {
@@ -28,85 +60,28 @@
   <body>
     <h1>My Sample Image Gallery</h1>
 
+    <div class="section-title">16px Icons</div>
     <ul class="image-list">
-      <li>
-        <img
-          src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/facebook16.png"          
-          alt="Facebook"
-        />
-      </li>
-      <li>
-        <img
-          src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/instagram-16.png"
-          alt="Instagram"
-        />
-      </li>
-      <li>
-        <img
-          src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/twitter-16.png"
-          alt="Twitter"
-        />
-      </li>
-      <li>
-        <img
-          src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/whatsapp-16.png"
-          alt="Whatsapp"
-        />
-      </li>
+      <li><img src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/facebook16.png" alt="Facebook" /></li>
+      <li><img src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/instagram-16.png" alt="Instagram" /></li>
+      <li><img src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/twitter-16.png" alt="Twitter" /></li>
+      <li><img src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/whatsapp-16.png" alt="Whatsapp" /></li>
     </ul>
 
+    <div class="section-title">32px Icons</div>
     <ul class="image-list">
-      <li>
-        <img
-          src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/facebook-32.png"
-          alt="Facebook"
-        />
-      </li>
-      <li>
-        <img
-          src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/instagram-32.png"
-          alt="Instagram"
-        />
-      </li>
-      <li>
-        <img
-          src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/twitter-32.png"
-          alt="Twitter"
-        />
-      </li>
-      <li>
-        <img
-          src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/whatsapp-32.png"
-          alt="Whatsapp"
-        />
-      </li>
+      <li><img src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/facebook-32.png" alt="Facebook" /></li>
+      <li><img src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/instagram-32.png" alt="Instagram" /></li>
+      <li><img src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/twitter-32.png" alt="Twitter" /></li>
+      <li><img src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/whatsapp-32.png" alt="Whatsapp" /></li>
     </ul>
 
-     <ul class="image-list">
-      <li>
-        <img
-          src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/facebook64.png"
-          alt="Facebook"
-        />
-      </li>
-      <li>
-        <img
-          src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/instagram-64.png"
-          alt="Instagram"
-        />
-      </li>
-      <li>
-        <img
-          src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/twitter-64.png"
-          alt="Twitter"
-        />
-      </li>
-      <li>
-        <img
-          src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/whatsapp-64.png"
-          alt="Whatsapp"
-        />
-      </li>
+    <div class="section-title">64px Icons</div>
+    <ul class="image-list">
+      <li><img src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/facebook64.png" alt="Facebook" /></li>
+      <li><img src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/instagram-64.png" alt="Instagram" /></li>
+      <li><img src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/twitter-64.png" alt="Twitter" /></li>
+      <li><img src="https://raw.githubusercontent.com/MadhuriMuppana/image-gallery/main/whatsapp-64.png" alt="Whatsapp" /></li>
     </ul>
   </body>
 </html>
